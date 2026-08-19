@@ -36,10 +36,10 @@ function ResearchPage() {
         ]}
         buildPrompt={(v) => `Produce a research brief.
 
-Topic: ${v.topic}
-Audience: ${v.audience || "internal team"}
-Depth: ${v.depth}
-Emphasis: ${v.angle}
+Topic: ${v["topic"]}
+Audience: ${v["audience"] || "internal team"}
+Depth: ${v["depth"]}
+Emphasis: ${v["angle"]}
 
 Output:
 1. Executive summary

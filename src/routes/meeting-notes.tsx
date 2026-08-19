@@ -39,9 +39,9 @@ function NotesPage() {
         ]}
         buildPrompt={(v) => `Summarize the following meeting.
 
-Title: ${v.title || "Untitled meeting"}
-Attendees: ${v.attendees || "not specified"}
-Requested style: ${v.style}
+Title: ${v["title"] || "Untitled meeting"}
+Attendees: ${v["attendees"] || "not specified"}
+Requested style: ${v["style"]}
 
 Structure the output with these sections:
 1. Summary (3-5 sentences)
@@ -52,7 +52,7 @@ Structure the output with these sections:
 
 Raw notes:
 """
-${v.notes}
+${v["notes"]}
 """`}
       />
     </AppShell>

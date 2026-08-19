@@ -37,11 +37,11 @@ function TasksPage() {
         ]}
         buildPrompt={(v) => `Create a task plan.
 
-Goal: ${v.goal}
-Deadline: ${v.deadline || "not specified"}
-Capacity: ${v.capacity || "not specified"}
-People: ${v.team || "not specified"}
-Optimize for: ${v.priority}
+Goal: ${v["goal"]}
+Deadline: ${v["deadline"] || "not specified"}
+Capacity: ${v["capacity"] || "not specified"}
+People: ${v["team"] || "not specified"}
+Optimize for: ${v["priority"]}
 
 Output:
 1. Plan overview (2-3 sentences)
